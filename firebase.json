@@ -1,17 +1,12 @@
 {
+  "rules": {
+    ".read": "true",
+    ".write": "true"
+  },
   "database": {
     "rules": {
-      ".read": true,
-      ".write": true
+      ".read": "true",
+      ".write": "true"
     }
-  },
-  "hosting": {
-    "public": "public",
-    "rewrites": [
-      {
-        "source": "**",
-        "destination": "/index.html"
-      }
-    ]
   }
 }
