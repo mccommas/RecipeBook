@@ -10,7 +10,7 @@ import { RecipeDetailComponent } from './recipe-detail/recipe-detail.component';
 import { RecipeItemComponent } from './recipe-list/recipe-item/recipe-item.component';
 import { RecipesRoutingModule } from './recipes-routing.module';
 import { SharedModule } from '../shared/shared.module';
-
+import {ConfirmationPopoverModule} from 'angular-confirmation-popover';
 @NgModule({
   declarations: [
     RecipesComponent,
@@ -24,7 +24,8 @@ import { SharedModule } from '../shared/shared.module';
     CommonModule,
     ReactiveFormsModule,
     RecipesRoutingModule,
-    SharedModule
+    SharedModule,
+    ConfirmationPopoverModule.forRoot()
   ]
 })
 export class RecipesModule {}
