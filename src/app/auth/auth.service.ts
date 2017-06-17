@@ -41,7 +41,7 @@ export class AuthService {
   logout() {
     firebase.auth().signOut().then(
       response => {
-          this.toasterService.pop('success', 'Logout', 'Logout success');
+          this.toasterService.pop('warning', 'Logout', 'Logout success');
       }
     );
     this.token = null;
