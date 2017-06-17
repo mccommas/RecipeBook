@@ -9,7 +9,7 @@ import {ToasterModule, ToasterService} from 'angular2-toaster';
 import {SharedModule} from './shared/shared.module';
 import {AuthModule} from './auth/auth.module'
 import {CoreModule} from './core/core.module';
-
+import {ConfirmationPopoverModule} from 'angular-confirmation-popover';
 @NgModule({
     declarations: [
         AppComponent
@@ -23,7 +23,8 @@ import {CoreModule} from './core/core.module';
         AuthModule,
         CoreModule,
         BrowserAnimationsModule,
-        ToasterModule
+        ToasterModule,
+        ConfirmationPopoverModule.forRoot()
     ],
     bootstrap: [AppComponent]
 })
